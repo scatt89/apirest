@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MANTAINER Marrarichy Da Silva Garcia <dasilvagarciam@gmail.com>
+MAINTAINER Marrarichy Da Silva Garcia <dasilvagarciam@gmail.com>
 
 #environment variables
 ENV MYSQL_CONTAINER=db \
