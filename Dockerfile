@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
-
 MAINTAINER Marrarichy Da Silva Garcia <dasilvagarciam@gmail.com>
+LABEL Description="APIrest docker image" Version="0.1"
 
 #environment variables
 ENV MYSQL_CONTAINER=db \
@@ -11,10 +11,9 @@ DLL-AUTO=create \
 MYSQL-PORT=3306 \
 JAVA_APP=app.jar
 
-#repository update, java 7 and mysql client install
-RUN apt-get update && \
-apt-get install -y openjdk-7-jre-headless && \
-apt-get install -y mysql-client
+#repository update and java 7 install
+RUN apt-get -y update && \
+apt-get install -y openjdk-7-jre-headless
 
 #add the jar app to the directory / of the cantainer
 ADD ${JAVA_APP} /${JAVA_APP}
