@@ -1,5 +1,7 @@
 # apirest
 
+[![](https://images.microbadger.com/badges/image/scatt89/apirest.svg)](https://microbadger.com/images/scatt89/apirest "Get your own image badge on microbadger.com")
+
 A Docker container to run Java APIRest linked with a MySQL database
 
 Default configurations are to:
